@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full">
+  <div data-id="autocomplete" class="w-full">
     <div @click="focusInput()" class="py-4 shadow-md border border-gray-200 rounded-md bg-white">
       <!-- Input Field -->
       <div class="flex items-center">
@@ -8,8 +8,9 @@
           <SearchIcon className="w-5 h-5 text-gray-700" />
 
         </div>
-        <input ref="_input_" class="block p-2 w-full  focus:border-transparent focus:ring-0 focus:outline-none"
-          :placeholder='label' type="text" v-model='_query' />
+        <input data-id="query-input" ref="_input_"
+          class="block p-2 w-full  focus:border-transparent focus:ring-0 focus:outline-none" :placeholder='label'
+          type="text" v-model='_query' />
 
         <XIcon v-if="_query" className="w-5 h-5 mr-5 cursor-pointer rounded-full hover:bg-gray-50 text-gray-300"
           @click="clear()" />
@@ -20,7 +21,7 @@
         It seems nothing found :(
       </div>
       <!-- Results List -->
-      <ul class="flex flex-col ">
+      <ul data-id="query-results" class="flex flex-col">
         <li v-for="option in options" v-bind:key="option.id" class="px-7 py-2 hover:bg-gray-100 cursor-pointer">
           {{option.label}}
         </li>

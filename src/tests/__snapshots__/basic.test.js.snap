@@ -1,0 +1,22 @@
+// Vitest Snapshot v1
+
+exports[`mount component 1`] = `
+"<div data-id=\\"autocomplete\\" class=\\"w-full\\">
+  <div class=\\"py-4 shadow-md border border-gray-200 rounded-md bg-white\\">
+    <!-- Input Field -->
+    <div class=\\"flex items-center\\">
+      <div class=\\"pl-5\\"><svg xmlns=\\"http://www.w3.org/2000/svg\\" fill=\\"none\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"1.5\\" stroke=\\"currentColor\\" class=\\"w-5 h-5 text-gray-700\\">
+          <path stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\" d=\\"M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z\\"></path>
+        </svg></div><input data-id=\\"query-input\\" class=\\"block p-2 w-full focus:border-transparent focus:ring-0 focus:outline-none\\" placeholder=\\"Search\\" type=\\"text\\"><svg xmlns=\\"http://www.w3.org/2000/svg\\" fill=\\"none\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"1.5\\" stroke=\\"currentColor\\" class=\\"w-5 h-5 mr-5 cursor-pointer rounded-full hover:bg-gray-50 text-gray-300\\">
+        <path stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\" d=\\"M6 18L18 6M6 6l12 12\\"></path>
+      </svg>
+    </div><!-- Input Field -->
+    <!--v-if-->
+    <!-- Results List -->
+    <ul data-id=\\"query-results\\" class=\\"flex flex-col\\">
+      <li class=\\"px-7 py-2 hover:bg-gray-100 cursor-pointer\\">opt 1</li>
+      <li class=\\"px-7 py-2 hover:bg-gray-100 cursor-pointer\\">opt 2</li>
+    </ul><!-- /Results List -->
+  </div>
+</div>"
+`;

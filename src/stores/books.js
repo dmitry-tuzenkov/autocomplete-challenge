@@ -1,6 +1,6 @@
 import { defineStore } from "pinia";
-import { books } from "@/datasets";
-import { isZeroContain } from "@/utils";
+import { books } from "../datasets";
+import { isZeroContain } from "../utils";
 
 export const useBooksStore = defineStore("books", {
   state: () => ({
