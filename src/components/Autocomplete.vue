@@ -66,7 +66,6 @@ export default {
   mounted() {
     if (this.focused) {
       this.$nextTick(() => this.focusInput())
-      setTimeout(() => this.focusInput(), 700)
     }
   },
 

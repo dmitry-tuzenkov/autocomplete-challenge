@@ -1,6 +1,6 @@
 <template>
   <div class="w-full py-3">
-    <AutoComplete focused label="Type 3 letters for book search" v-model:query="query" :options="queryResults"
+    <AutoComplete focused="true" label="Type 3 letters for book search" v-model:query="query" :options="queryResults"
       :nothing="nothingFound" />
     <p class="py-1 px-2 text-xs text-gray-400">
       Try to type: {{_all.map(x => x.title).join(', ')}}
