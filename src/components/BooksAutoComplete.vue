@@ -9,7 +9,6 @@
 </template>
 
 <script>
-// import { mapState } from 'pinia'
 import { useBooksStore } from '@/stores/books'
 import AutoComplete from './Autocomplete.vue'
 
@@ -31,7 +30,7 @@ export default {
 
   computed: {
     nothingFound() {
-      return this.query.length > 3 && !this._lookup(this.query).length
+      return this.query.length >= 3 && !this._lookup(this.query).length
     },
 
     queryResults() {
